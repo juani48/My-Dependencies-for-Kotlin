@@ -12,6 +12,7 @@ In the module's build.gradle.kts
 ```kotlin
 plugins {
     //...
+
     //Dagger Hilt
     id("kotlin-kapt")
 
@@ -21,17 +22,16 @@ plugins {
 dependencies {
     //...
 
-    // ROOM
-    implementation(libs.androidx.room.runtime)
-    annotationProcessor(libs.androidx.room.compiler)
-    ksp(libs.androidx.room.compiler)
-
-    // Coroutines
-    implementation(libs.androidx.lifecycle.runtime.ktx.v262)
-
-    // Dagger Hilt
+    //Dagger Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+
+    // Coroutines
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // ROOM
+    implementation(libs.room.runtime)
+    ksp(libs.androidx.room.compiler)
 }
 
 ```
