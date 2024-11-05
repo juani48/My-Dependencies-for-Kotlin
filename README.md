@@ -4,9 +4,6 @@
 ```kotlin
     //...
 
-    //Dagger hilt
-    id("com.google.dagger.hilt.android") version "2.48" apply false
-
     // KSP
     id("com.google.devtools.ksp") version "1.9.0-1.0.13"
 ```
@@ -16,7 +13,6 @@ In the module's build.gradle.kts
 plugins {
     //...
     //Dagger Hilt
-    id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
 
     // KPS
