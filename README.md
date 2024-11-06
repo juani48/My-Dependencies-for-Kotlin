@@ -32,6 +32,8 @@ dependencies {
     // ROOM
     implementation(libs.room.runtime)
     ksp(libs.androidx.room.compiler)
+    annotationProcessor(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx) //Coroutines support for ROOM
 }
 
 ```
